@@ -1,0 +1,269 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fc;
+    color: #263247;
+    line-height: 1.7;
+}
+
+nav {
+    background: #142b4a;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #70c1ff;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #70c1ff;
+}
+
+.hero {
+    min-height: 470px;
+    padding: 70px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    background: linear-gradient(135deg, #e5efff, #ffffff);
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 260px;
+}
+
+.welcome {
+    color: #1769aa;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 12px 0;
+}
+
+.hero h1 span {
+    color: #1769aa;
+}
+
+.hero h2 {
+    margin-bottom: 15px;
+}
+
+.hero-text > p:not(.welcome) {
+    max-width: 550px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 20px;
+    margin: 5px 5px 5px 0;
+    background: #1769aa;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #104c80;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #1769aa;
+    color: #1769aa;
+}
+
+.profile {
+    width: 260px;
+    text-align: center;
+    background: white;
+    padding: 30px 20px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px #142b4a18;
+    margin: auto;
+}
+
+.avatar {
+    font-size: 90px;
+    background: #e5efff;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+}
+
+.profile p {
+    color: #65748b;
+}
+
+.content-section {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px #142b4a0c;
+}
+
+.content-section h2 {
+    color: #1769aa;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #dce9f8;
+    padding-bottom: 8px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.card {
+    flex: 1;
+    min-width: 150px;
+    padding: 22px;
+    border-radius: 10px;
+    background: #edf4fd;
+    text-align: center;
+    border: 1px solid #dce9f8;
+}
+
+.page-card {
+    text-decoration: none;
+    color: #263247;
+}
+
+.page-card:hover {
+    background: #dcecff;
+}
+
+footer {
+    background: #142b4a;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 40px;
+}
+
+/* Resume and Bio-data pages */
+
+.resume-container {
+    max-width: 850px;
+    margin: 35px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px #142b4a15;
+}
+
+.resume-header {
+    background: #142b4a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.resume-container section {
+    margin-top: 25px;
+}
+
+.resume-container section h2 {
+    color: #1769aa;
+    border-bottom: 2px solid #dce9f8;
+    margin-bottom: 12px;
+    padding-bottom: 5px;
+}
+
+.resume-container li {
+    margin-left: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ccd7e5;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #1769aa;
+    color: white;
+}
+
+@media (max-width: 650px) {
+    nav {
+        justify-content: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 40px 6%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .content-section {
+        margin: 18px;
+        padding: 22px;
+    }
+
+    .resume-container {
+        margin: 15px;
+        padding: 18px;
+        overflow-x: auto;
+    }
+}
+```

@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Resume</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  background: #edf1f6;
+  color: #263244;
+}
+
+.resume {
+  max-width: 850px;
+  margin: auto;
+  padding: 36px;
+  background: white;
+  box-shadow: 0 4px 18px #0001;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 22px;
+  border-bottom: 3px solid #244c78;
+}
+
+h1 { color: #244c78; margin: 0 0 10px; }
+.contact p { margin: 6px 0; font-size: 13px; }
+
+.photo {
+  width: 120px;
+  height: 145px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+h2 {
+  font-size: 17px;
+  color: #244c78;
+  border-bottom: 1px solid #d5dce5;
+  padding-bottom: 7px;
+  margin-top: 25px;
+}
+
+p, li { font-size: 13px; line-height: 1.7; }
+.project-title { font-weight: bold; font-size: 15px; }
+.tech { color: #345c84; font-weight: bold; }
+
+.animation {
+  background: #f5f8fc;
+  border: 1px solid #dbe3ed;
+  border-radius: 10px;
+  padding: 18px;
+  margin-top: 15px;
+}
+
+.bars {
+  height: 180px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 0;
+  border-bottom: 2px solid #9aaabd;
+}
+
+.bar {
+  flex: 1;
+  max-width: 48px;
+  min-width: 12px;
+  background: #5389c6;
+  color: white;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 5px;
+  font-size: 12px;
+  transition: height .25s, background .25s;
+}
+
+.bar.active { background: #ed9a39; }
+.bar.sorted { background: #279b78; }
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  border: 0;
+  padding: 10px 15px;
+  background: #244c78;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled { opacity: .5; cursor: default; }
+
+#status { min-height: 36px; font-size: 13px; }
+
+@media(max-width:600px) {
+  body { padding: 8px; }
+  .resume { padding: 20px; }
+  header { align-items: flex-start; }
+  .photo { width: 90px; height: 110px; }
+}
+
+@media print {
+  body { padding: 0; background: white; }
+  .resume { box-shadow: none; padding: 20px; }
+  .animation, .controls { display: none; }
+}
+</style>
+</head>
+
+<body>
+<main class="resume">
+
+<header>
+  <div class="contact">
+    <h1>Chetan Shankrappa Lamani</h1>
+    <p>Phone:7353310963</p>
+    <p>Email:chetanlamanichetanlamani468@gmail.coml.com</p>
+    <p>Address: B.Shigigatti,tq:kalaghatagi,Dist:Dharwad, Karnataka</p>
+  </div>
+  <img src="Myphoto.jpg" class="photo" alt="Profile photo">
+</header>
+
+<section>
+<h2>CAREER OBJECTIVE</h2>
+<p>
+Motivated and enthusiastic fresher seeking an opportunity
+to apply technical knowledge, solve problems, and contribute
+to organizational goals while continuously learning new skills.
+</p>
+</section>
+
+<section>
+  <h2>EDUCATION</h2>
+
+  <div class="education-item">
+    <p><b>Bachelor of Engineering / Technology (BE/BTech)</b></p>
+    <p>Branch: <span contenteditable="true">Computer Science</p>
+    <p>College: <span contenteditable="true">Kle Institute Of Technology</span></p>
+    <p>University: <span contenteditable="true">Visvesvaraya Technological University</span></p>
+    <p>Year of passing: <span contenteditable="true">2028</span></p>
+    <p>CGPA / Percentage: <span contenteditable="true">7.6</span></p>
+  </div>
+
+  <div class="education-item">
+    <p><b>PUC / 12th Standard</b></p>
+    <p>College: <span contenteditable="true"></span></p>
+    <p>Board: <span contenteditable="true">KSEAB</p>
+    <p>Stream: <span contenteditable="true">Science</p>
+    <p>Year of Passed: <span contenteditable="true">2024</span></p>
+    <p>Percentage: <span contenteditable="true">92.83</p>
+  </div>
+
+  <div class="education-item">
+    <p><b>SSLC / 10th Standard</b></p>
+    <p>School: <span contenteditable="true">Govt Adarsha Vidyalaya Dastikoppa</p>
+    <p>Board: <span contenteditable="true">KSEEB</p>
+    <p>Year of Passed: <span contenteditable="true">2022<</p>
+    <p>Percentage: <span contenteditable="true">93.12</p>
+  </div>
+</section>
+
+
+<section>
+<h2>TECHNICAL SKILLS</h2>
+<ul>
+  <li><b>Frontend:</b> HTML5, CSS3, JavaScript</li>
+  <li><b>Backend:</b> Python</li>
+  <li><b>Database:</b> MySQL</li>
+  <li><b>Tools:</b> Git, GitHub, VS Code</li>
+  <li><b>Core Concepts:</b> Data Structures, Algorithms, DBMS</li>
+</ul>
+<p>
+Replace these with the technologies you actually know and have used.
+</p>
+</section>
+
+<section>
+<h2>ACADEMIC PROJECTS</h2>
+
+<p class="project-title">1. Student Management System</p>
+<p>
+Developed a system to manage student profiles, academic records,
+and student information in an organized manner.
+</p>
+<p><span class="tech">Technologies:</span>
+HTML, CSS, JavaScript, Python, MySQL</p>
+
+<p class="project-title">2. Library Management System</p>
+<p>
+Designed a library application to maintain book records and
+manage book availability, issue details, and return records.
+</p>
+<p><span class="tech">Technologies:</span>
+HTML, CSS, JavaScript, Python, MySQL</p>
+</section>
+
+<section>
+<h2>ALGORITHM ANIMATION — BUBBLE SORT</h2>
+<p>
+An interactive demonstration of Bubble Sort. Press Start to watch
+how adjacent numbers are compared and swapped into ascending order.
+</p>
+
+<div class="animation">
+  <b>Bubble Sort Visualizer</b>
+  <div class="bars" id="bars" aria-label="Animated sorting bars"></div>
+  <p id="status" aria-live="polite">Press Start Animation to begin.</p>
+  <div class="controls">
+    <button id="start">Start Animation</button>
+    <button id="reset">Reset</button>
+  </div>
+</div>
+</section>
+
+<section>
+<h2>PERSONAL SKILLS</h2>
+<ul>
+  <li>Problem-solving and logical thinking</li>
+  <li>Teamwork and communication</li>
+  <li>Time management and willingness to learn</li>
+</ul>
+</section>
+
+<section>
+<h2>DECLARATION</h2>
+<p>
+I declare that the information provided above is true to the
+best of my knowledge.
+</p>
+<p><b>Place:</b>B.Shigigatti</p>
+<p><b>Date:</b>03/11/2026</p>
+</section>
+
+</main>
+
+<script>
+const original = [45, 18, 72, 30, 56, 12, 64];
+let values = [...original];
+let i = 0, j = 0, running = false, timer = null;
+
+const bars = document.getElementById("bars");
+const status = document.getElementById("status");
+const start = document.getElementById("start");
+
+function render(highlightA = -1, highlightB = -1, sortedFrom = 7) {
+  bars.innerHTML = "";
+
+  values.forEach((value, index) => {
+    const bar = document.createElement("div");
+    bar.className = "bar";
+    bar.style.height = value * 2 + "px";
+    bar.textContent = value;
+
+    if (index === highlightA || index === highlightB) {
+      bar.classList.add("active");
+    } else if (index >= sortedFrom) {
+      bar.classList.add("sorted");
+    }
+
+    bars.appendChild(bar);
+  });
+}
+
+function stop() {
+  running = false;
+  clearTimeout(timer);
+  timer = null;
+  start.disabled = false;
+}
+
+function step() {
+  if (!running) return;
+
+  if (i >= values.length - 1) {
+    render(-1, -1, 0);
+    status.textContent = "Complete! Numbers are sorted.";
+    stop();
+    return;
+  }
+
+  if (j >= values.length - i - 1) {
+    j = 0;
+    i++;
+    step();
+    return;
+  }
+
+  render(j, j + 1, values.length - i);
+  status.textContent =
+    `Comparing ${values[j]} and ${values[j + 1]}`;
+
+  if (values[j] > values[j + 1]) {
+    [values[j], values[j + 1]] =
+      [values[j + 1], values[j]];
+    status.textContent += " — swapped!";
+  }
+
+  j++;
+  timer = setTimeout(step, 650);
+}
+
+start.addEventListener("click", () => {
+  if (running) return;
+  if (i >= values.length - 1) reset();
+  running = true;
+  start.disabled = true;
+  step();
+});
+
+function reset() {
+  stop();
+  values = [...original];
+  i = 0;
+  j = 0;
+  render();
+  status.textContent = "Press Start Animation to begin.";
+}
+
+document.getElementById("reset").addEventListener("click", reset);
+
+render();
+</script>
+</body>
+</html>
